@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>River Visualization</title>
+  <style>
+    body {
+      font-family: Helvetica, Arial, sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
 
-    <title>Sketch</title>
+    #chart-container {
+      width: 95%;
+      height: 90%;
+      overflow-y: auto; /* Scroll verticale per vedere tutti i fiumi */
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #ffffff;
+    }
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-top: 10px;
+      color: #34495e;
+    }
+  </style>
+</head>
+<body>
+  <div id="chart-container">
+    <h1>River Visualization</h1>
+  </div>
 
-    <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
-  </head>
-
-  <body>
-    <script src="sketch.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <script src="sketch.js"></script>
+</body>
 </html>
